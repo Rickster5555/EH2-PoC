@@ -25,7 +25,6 @@ After the server is started, you will see the login page at `http://localhost:80
 
 Then login as admin/admin, follow the instructions to initialize the application. Actually, just click the "next button" again and again before you see the success page.
 
-![](1.png)
 
 Before you can exploit this vulnerability, you have to add a new "Graph" because the command injection is occurred not in the default graph type:
 
@@ -37,10 +36,10 @@ Select the graph type "Device - Uptime", and click the "Create" button:
 
 ## Exploit
 
-After complete the above initialization, you will change your role to a attacker. Just send following request to Cacti server to trigger the command injection attack:
+After complete the above initialization, you will change your role to a attacker. Just use following script as shown to send a request to the Cacti server to trigger the command injection attack:
 
-![](4.png)
+![](1.png)
 
-Although no command result in the response, you can find the `/tmp/success` has been touched successfully.
+Although no command result in the response, you can find the `/tmp/test.txt` has been created successfully.
 
 ![](5.png)
