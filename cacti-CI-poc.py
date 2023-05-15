@@ -26,7 +26,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 2 and sys.argv[1] == "-h":
         print_help()
     elif len(sys.argv) < 4:
-        print("You must input parameters 'IP', 'PORT' and 'COMMAND', in that order.")
+        print("Debe proporcionar el valor de los parámetros 'IP', 'PORT' y 'COMMAND'.")
     else:
         ip = sys.argv[1]
         port = sys.argv[2]
